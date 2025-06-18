@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 # Create a driver instance
 driver = webdriver.Chrome()  # Capitalize 'Chrome'
-
+# https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F
 driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
 driver.maximize_window()
 WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.NAME, "username")))
